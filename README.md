@@ -6,6 +6,7 @@ To keep DLL references valid, we recommend storing repositories like so:
 - `..\<SharedFolder>\RiptideToolkit\Riptide.Toolkit\...`
 - `..\<SharedFolder>\RiptideToolkit\Riptide.Toolkit.Examples\...`
 - `..\<SharedFolder>\RiptideToolkit.Testing\Riptide.Toolkit.Testing\...`
+Or you can manually reference all required DLLs from main repository.
 
 ## Compatibility
 You are **not** supposed to use `Riptide.Toolkit.Testing` anywhere.
