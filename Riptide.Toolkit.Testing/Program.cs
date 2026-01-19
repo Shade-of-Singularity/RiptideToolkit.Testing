@@ -21,6 +21,7 @@ namespace Riptide.Toolkit.Testing
                 try { Basics.Stop(); } catch { }
             }
             while (KeepWaiting()) await Task.Delay(10);
+            await Task.Delay(3000);
         }
 
         static bool KeepWaiting() => Basics.IsRunning;
