@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riptide.Toolkit.Testing", "Riptide.Toolkit.Testing\Riptide.Toolkit.Testing.csproj", "{CB5C792E-8E09-40C0-B6B3-166E2B230F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riptide.Toolkit.Testing.Relay", "Riptide.Toolkit.Testing.Relay\Riptide.Toolkit.Testing.Relay.csproj", "{9B175872-F991-4871-B5A9-635D72A6CB66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riptide.Toolkit.Testing.Relay.Server", "Riptide.Toolkit.Testing.Relay.Server\Riptide.Toolkit.Testing.Relay.Server.csproj", "{02B07CCB-ABC2-4262-975A-453A819FC4FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riptide.Toolkit.Testing.Relay.Client", "Riptide.Toolkit.Testing.Relay.Client\Riptide.Toolkit.Testing.Relay.Client.csproj", "{DEA3F968-4A9E-42CC-BC94-CE5F6113D4CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{CB5C792E-8E09-40C0-B6B3-166E2B230F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB5C792E-8E09-40C0-B6B3-166E2B230F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB5C792E-8E09-40C0-B6B3-166E2B230F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B175872-F991-4871-B5A9-635D72A6CB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B175872-F991-4871-B5A9-635D72A6CB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B175872-F991-4871-B5A9-635D72A6CB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B175872-F991-4871-B5A9-635D72A6CB66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B07CCB-ABC2-4262-975A-453A819FC4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B07CCB-ABC2-4262-975A-453A819FC4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B07CCB-ABC2-4262-975A-453A819FC4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B07CCB-ABC2-4262-975A-453A819FC4FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA3F968-4A9E-42CC-BC94-CE5F6113D4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA3F968-4A9E-42CC-BC94-CE5F6113D4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA3F968-4A9E-42CC-BC94-CE5F6113D4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA3F968-4A9E-42CC-BC94-CE5F6113D4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
