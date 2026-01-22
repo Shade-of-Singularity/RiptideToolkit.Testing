@@ -1,7 +1,5 @@
 ﻿using Riptide.Utils;
-using System.Buffers.Text;
 using System.Net;
-using System.Net.Security;
 using System.Net.Sockets;
 using System.Text;
 
@@ -9,15 +7,6 @@ namespace Riptide.Toolkit.Testing.Relay
 {
     internal class Program
     {
-        internal enum Ports : ushort
-        {
-            ServerDeclarator = 53405,
-            RelayDeclarator,
-
-            Server,
-            Relay,
-        }
-
         static async Task<int> Main(string[] args)
         {
             RiptideLogger.Initialize(Console.WriteLine, Console.WriteLine, Console.WriteLine, Console.WriteLine, true);

@@ -7,4 +7,32 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- References for Debug configuration -->
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'" Label="Debug Setup">
+    <Reference Include="Riptide.Toolkit">
+      <HintPath>..\..\RiptideToolkit\Riptide.Toolkit\bin\Debug\netstandard2.0\Riptide.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Riptide.Toolkit.Examples">
+      <HintPath>..\..\RiptideToolkit\Riptide.Toolkit.Examples\bin\Debug\netstandard2.0\Riptide.Toolkit.Examples.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!-- References for Release configuration -->
+  <ItemGroup Condition="'$(Configuration)' == 'Release'" Label="Release Setup">
+    <Reference Include="Riptide.Toolkit">
+      <HintPath>..\..\RiptideToolkit\Riptide.Toolkit\bin\Release\netstandard2.0\Riptide.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Riptide.Toolkit.Examples">
+      <HintPath>..\..\RiptideToolkit\Riptide.Toolkit.Examples\bin\Release\netstandard2.0\Riptide.Toolkit.Examples.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RiptideNetworking.Riptide" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Riptide.Toolkit.Testing.Relay\Riptide.Toolkit.Testing.Relay.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,10 +1,16 @@
-﻿namespace Riptide.Toolkit.Testing.Relay.Client
+﻿using Riptide.Utils;
+using System.Net;
+
+namespace Riptide.Toolkit.Testing.Relay.Client
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task<int> Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            RiptideLogger.Initialize(Console.WriteLine, Console.WriteLine, Console.WriteLine, Console.WriteLine, true);
+            AdvancedClient client = new();
+            client.Connect(IPAddress.Loopback.ToString() + ":" + (ushort)Ports.Server);
+            while (true) await client.Settle();
         }
     }
 }
